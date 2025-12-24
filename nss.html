@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aksesuar Dünyası</title>
+    <style>
+        /* Ümumi Stillər */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            color: #d4af37; /* Qızılı rəng */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Məhsul Toru (Grid) */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        /* Məhsul Kartı */
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 20px;
+        }
+
+        .card-info h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .price {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #d4af37;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Zərif Aksesuarlar</h1>
+    <p>Üslubunuzu tamamlayan detallar</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80" alt="Saat">
+        <div class="card-info">
+            <h3>Minimalist Qol Saatı</h3>
+            <span class="price">85.00 AZN</span>
+            <a href="#" class="btn">Sifariş et</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1535633302704-5022bed7c3f7?auto=format&fit=crop&w=400&q=80" alt="Boyunbağı">
+        <div class="card-info">
+            <h3>Gümüş Boyunbağı</h3>
+            <span class="price">45.00 AZN</span>
+            <a href="#" class="btn">Sifariş et</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=400&q=80" alt="Eynək">
+        <div class="card-info">
+            <h3>Klassik Gün Eynəyi</h3>
+            <span class="price">120.00 AZN</span>
+            <a href="#" class="btn">Sifariş et</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
